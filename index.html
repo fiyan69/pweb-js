@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Andi Rafiyan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #000;
+            color: #fff;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section {
+            padding: 50px;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .social-icons {
+            margin: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+        .see-more {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ccc;
+            border: none;
+            cursor: pointer;
+        }
+        .portfolio-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project img {
+            width: 100%;
+            max-width: 300px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        input, textarea, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+        }
+        .testimoni {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .testimoni-item {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 300px;
+        } -->
+    </style>    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AR</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Porto</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <img src="image/waduh.png" alt="Andi Rafiyan" class="profile-img">
+        <h1>Hey I'm Andi Rafiyan</h1>
+        <h2>I'm a UI/UX Designer</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        <div class="social-icons">
+            <a href="https://github.com/fiyan69" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/fiiyaaan_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <a href="#skills" class="see-more">See More</a>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills and Expertise</h2>
+        <p>Web Developer: HTML - CSS - JavaScript - NodeJS - PHP - Python</p>
+        <p>UI Designer: Visual Studio Code - MySQL - Git - GitHub - Figma</p>
+        <h2>What People Said</h2>
+        <div class="testimoni">
+            <div class="testimoni-item">
+                <h3>Fanum Tax</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <div class="testimoni-item">
+                <h3>Afdila Sri Kurniati</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <div class="testimoni-item">
+                <h3>Killua Zoldyck</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-container">
+            <div class="project">
+                <img src="image/project.png" alt="Project 1">
+                <h3>Project Name</h3>
+                <p>Technology Used:</p>
+                <p>Category:</p>
+                <p>Date:</p>
+            </div>
+            <div class="project">
+                <img src="image/project.png" alt="Project 2">
+                <h3>Project Name</h3>
+                <p>Technology Used:</p>
+                <p>Category:</p>
+                <p>Date:</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Andi Rafiyan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
